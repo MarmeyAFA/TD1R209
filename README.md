@@ -1,6 +1,6 @@
 Marius MEYRAN 🏴🚩
 Charles GUYOT ⚜
-Arnaud GARRET 
+Arnaud GARET 🃏
 
 # Projet TD1 R209
 ## La météo en un clic !
