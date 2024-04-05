@@ -150,10 +150,10 @@ article{
     
     display:grid;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-areas: 
     
-    "titre article";
+    "titre temp1 temp2 pluie soleil";
 
  
 }
