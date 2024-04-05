@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Postal</title>
+</head>
+
+<body>
+    <h1>Saisissez votre code postal :</h1>
+    <form id="postalCodeForm">
+        <label for="postalCode">Code postal :</label><br>
+        <input type="text" id="postalCode" name="postalCode" maxlength="5"><br>
+        <input type="submit" value="Envoyer">
+    </form>
+    <div id="communesDropdown">
+        <div id="communesDropdownList" class="hidden">
+            <ul id="communesList"></ul>
+        </div>
+        <script src="V1.js"></script>
+</body>
+</html>
