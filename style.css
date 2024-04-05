@@ -107,8 +107,8 @@ h2{
 p{
     font-size: 30px;
     font-family: sans-serif;
-    margin-top: 10%;
-    margin-left: 3%;
+    margin-top: 30%;
+    margin-left: 10%;
 
 }
 
@@ -138,11 +138,10 @@ footer{
 article{
     display:grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr  ;
     grid-template-areas: 
     "art1"
-    "art2"
-    "art3"
+
     ;
 }
 
@@ -150,7 +149,7 @@ article{
     
     display:grid;
 
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     
     "titre temp1 temp2 pluie soleil";
