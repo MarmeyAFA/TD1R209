@@ -1,0 +1,223 @@
+.header-bar{
+    display:grid;
+    grid-template-columns: 2fr 1fr;    
+    grid-template-areas:
+    "titre autre image"
+    ;   
+}
+
+
+
+#navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "a a a";
+    position: sticky;
+    top:10px;
+}
+
+#navigation a{
+    text-align:center;
+    font-family: 'Amatic SC', sans-serif;
+    place-items: center;
+    font-size: 40px;
+    color: black;
+    transition: all 1s ease-out;
+}
+
+
+#navigation a:hover, a:focus {
+    color: black;
+    background-color: #85C1E9 ;
+}
+
+
+
+#navigation a{
+  
+    border: 1px solid black;
+    border-radius: 18px;
+    outline: 0;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navigation a:not(:last-child) {
+    margin-right: 12px;
+}
+
+main{
+	
+	width: auto;
+	margin: auto; 
+	border-color: #e5e5e5;
+	}
+
+
+
+body{
+    background-image:url('fond3.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 0%;
+}
+
+h1, h2{
+	
+    text-transform: uppercase;
+    font-family: 'Amatic SC', sans-serif;
+    
+    }
+
+
+
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    text-align: center;
+    margin-top: 7%;
+    font-size: 90px;
+} 
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+h2{
+    font-size: 65px;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    place-items: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+
+}
+
+p{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 10%;
+    margin-left: 3%;
+
+}
+
+#logo{
+    width: 200px;
+    margin:50px;
+    position: sticky;
+    place-items:center;
+}
+
+footer{
+    width: 100%;
+	margin: auto; 
+	background-color: black;
+    text-align: center;
+    box-shadow:
+    inset 5em 5em 5em black,
+    0 0 5em black;
+}
+
+#foot{
+    color: white;
+    margin: 0%;
+}
+
+
+article{
+    display:grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "art1"
+    "art2"
+    "art3"
+    ;
+}
+
+#art1{
+    
+    display:grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    
+    "titre article";
+
+ 
+}
+
+@media(max-width: 1000px){
+	img {
+		display:none;
+	}
+    .header-bar{
+        display:block;
+        ;
+    
+    }
+    h2{
+        margin:5% 5%;
+        font-size: 75px;
+    }
+
+    p{
+        margin-top: 10%;
+
+    }
+    #art1{
+        display: block;
+        margin-bottom:10%;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top:7%;
+        border: 1px solid #aaa;
+        border-radius: 18px;
+        outline: 0;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    a{
+        text-align:center;
+        font-family: 'Amatic SC', sans-serif;
+        place-items: center;
+        font-size: 50px;
+        color: #fff;
+        transition: all 1s ease-out;
+    }
+	main{
+		width: auto;
+	}
+
+    body{
+        background-image:url('fond3.jpg') ;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 0%;
+    }
+    #navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "a a a";
+        position: relative;
+        top:10px;
+    }
+    #navigation a{
+        font-size: 30px;
+    }
+
+}
