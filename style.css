@@ -64,7 +64,7 @@ body{
     margin-bottom: 0%;
 }
 
-h1, h2{
+h1, h2, h3{
 	
     text-transform: uppercase;
     font-family: 'Amatic SC', sans-serif;
@@ -97,6 +97,17 @@ h2{
     text-align: center;
     margin-top: 20%;
     margin-bottom: 50%;
+    place-items: center;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     place-items: center;
     animation-duration: 2s;
     animation-name: slidein;
@@ -153,9 +164,15 @@ article{
     grid-template-areas: 
     
     "titre temp1 temp2 pluie soleil";
-
- 
-}
+    }
+footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0; 
+        left: 0; 
+        right: 0;
+        /* Reste du CSS... */
+      }
 
 @media(max-width: 1000px){
 	img {
