@@ -2,6 +2,7 @@ const form = document.getElementById('postalCodeForm');
 const apiUrl = 'https://geo.api.gouv.fr/communes?codePostal=';
 const communeSelect = document.getElementById('commune');
 const errorMessage = document.getElementById('communesList');
+communeSelect.hidden = true ;
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -10,7 +11,7 @@ form.addEventListener('submit', (event) => {
 
     if (!postalCodeRegex.test(postalCode)) {
         errorMessage.textContent = 'Veuillez entrer un code postal valide (5 chiffres).';
-        errorMessage.classList.remove('hidden');
+        communeSelect.hidden = true ;
         return;
     }
 
@@ -21,7 +22,9 @@ form.addEventListener('submit', (event) => {
      .then(data => {
             if (data.length === 0) {
                 errorMessage.textContent = 'Le code postal demandé n\'existe pas.';
+                communeSelect.hidden = true ;
             } else {
+                communeSelect.hidden = false;
                 communeSelect.innerHTML = '';
                 data.forEach(commune => {
                     const option = document.createElement('option');
@@ -29,7 +32,7 @@ form.addEventListener('submit', (event) => {
                     option.text = commune.nom;
                     communeSelect.add(option);
                 });
+                errorMessage.textContent = '';
             }
         })
 });
-
